@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiApplication</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiApplication.Controllers.AthletesController.Get">
+            <summary>
+            Gets all athletes.
+            </summary>
+            <returns>A list of all athletes.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.AthletesController.Get(System.Int32)">
+            <summary>
+            Retrieves a specific athlete.
+            </summary>
+            <param name="id"></param>
+            <returns>The requested activity if found, otherwise nothing.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.AthletesController.Post(WebApiApplication.Models.Athlete)">
+            <summary>
+            Creates a new athlete.
+            </summary>
+            <param name="value"></param>
+            <returns>Created status if successful.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.AthletesController.Delete(System.Int32)">
+            <summary>
+            Deletes an athlete by id.
+            </summary>
+            <param name="id"></param>
+            <returns>True if athlete was successfully deleted, otherwise false.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.ActivitiesController.Get">
+            <summary>
+            Gets all activities.
+            </summary>
+            <returns>A list of all acivities.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.ActivitiesController.Get(System.Int32)">
+            <summary>
+            Retrieves a specific activity.
+            </summary>
+            <param name="id"></param>
+            <returns>The requested activity if found, otherwise nothing.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.ActivitiesController.Post(WebApiApplication.Models.Activity)">
+            <summary>
+            Creates a new activity.
+            </summary>
+            <param name="value"></param>
+            <returns>Created status if successful.</returns>
+        </member>
+        <member name="M:WebApiApplication.Controllers.ActivitiesController.Delete(System.Int32)">
+            <summary>
+            Deletes an activity by id.
+            </summary>
+            <param name="id"></param>
+            <returns>True if activity was successfully deleted, otherwise false.</returns>
+        </member>
+    </members>
+</doc>
