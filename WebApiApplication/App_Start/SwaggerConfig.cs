@@ -11,12 +11,11 @@ namespace WebApiApplication
     {
         public static void Register()
         {
-            var thisAssembly = typeof(SwaggerConfig).Assembly;
-
-            Register(GlobalConfiguration.Configuration);
+            RegisterWithConfig(GlobalConfiguration.Configuration);
         }
 
-        public static void Register(HttpConfiguration configuration)
+        // Method must be called different name that "Register" otherwise you will get an AmbiguousMatchException
+        public static void RegisterWithConfig(HttpConfiguration configuration)
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 

@@ -7,7 +7,7 @@ namespace WebApiApplication.SwaggerGenerator
     {
         private static void Main(string[] args)
         {
-            using (var server = TestServer.Create<Startup>())
+            using (var server = TestServer.Create<WebApiHostStartup>())
             {
                 var response = server.CreateRequest("/swagger/docs/v1").GetAsync().Result;
                 var content = response.Content.ReadAsStringAsync().Result;
